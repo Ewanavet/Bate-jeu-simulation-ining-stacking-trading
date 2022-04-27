@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>CryptoFramer Last version</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <div id="conteneurScreen">
+        <header>
+            <h2>
+                <strong class="dateJour">0D</strong>
+                <span class="dateHeure">0H</span>
+            </h2>
+            <div><h1 class="soldeHTML" id="soldeTTdeTout">0</h1>$</div>
+            <div id="log"></div>
+            <div id="infos">
+                <p id="hashrateTT"></p>
+                <p id="ValeureTT"></p>
+                <p id="ConsoTT"></p>
+            </div>
+        </header>
+        <table>
+            <tbody>
+                <tr>
+                    <td id="screen1" class="screen" rowspan="2">
+                            <div id="headScreen1">
+                                <button id="addFarmBtn">Add RIG</button>
+                                <button id="addFullFarmBtn">Add Full RIG</button>
+                                <h4>RIG : <span id="NbsframsH4">0</span></h4>
+                                <!-- <h3><span id="spanHashrate">0</span>MH/s</h3> -->
+                            </div>
+                            <div id="FarmScreen">
+                            </div>
+                    </td>
+                    <td id="screen3" class="screen">
+                            <div id="headScreen3">
+                                <h3>Wallet</h3>
+                            </div>
+                            <ul id="scr3contenu">
+                                <li>USD : <span class="soldeHTML">0</span></li>
+                                <li>BTC : <span class="soldeBTC">0</span></li>
+                                <li>ETH : <span class="soldeETH">0</span></li>
+                                <li>FLUX : <span class="soldeFLUX">0</span></li>
+                            </ul>
+                    </td>
+                    <td id="screen5" class="screen">
+                            <div id="headScreen5">
+                                <h3>Cours</h3>
+                            </div>
+                            <div id="src5contenu">
+                                <div id="ETH">
+                                    <p>1 ETH | 3000$ 0%</p>
+                                </div>
+                            </div>
+                    </td>            
+                </tr>
+                <tr>
+                    <td id="screen4" class="screen">
+                        <div id="headScreen4">
+                            <h3>Stats/Infos</h3>
+                        </div>
+                        <div id="scr4contenu">
+                            <p id="dateStats">
+                                <strong>1s = 2h</strong>
+                            </p>
+                            <p id="constStats">
+                                <span></span>
+                                <strong></strong>
+                            </p>
+                            <p id="hsStats">
+                                <span></span>
+                                <strong></strong>
+                            </p>
+                            <p id="consoStats">
+                                <span></span>
+                                <strong></strong>
+                            </p>
+                            <p id="ttStats">
+                                <span></span>
+                                <strong></strong>
+                            </p>
+                            <p id="ttethMin">
+                                <span></span>
+                                <strong></strong>
+                            </p>
+                            <p id="rsiStats">
+                                <span></span>
+                            </p>
+                        </div>
+                    </td>
+                    <td id="screen2" class="screen">
+                        <div id="headScreen2"><h3>GPU Shop</h3></div>
+                        <div id="ShopGpuPlace"></div>
+                    </td>
+                </tr>
+                    
+            </tbody>
+        </table>    
+    </div>
+
+    <script src="./srcipt.js"></script>
+</body>
+</html>

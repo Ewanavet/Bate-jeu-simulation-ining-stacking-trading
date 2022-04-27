@@ -1,0 +1,364 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(54, 54, 54);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 2px;
+  padding: 0px;
+  text-align: left;
+}
+
+/* menu */
+/* top head */
+header {
+  background-color: #6f7a82;
+  margin: 0;
+  border: 3px solid black;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: span 4;
+}
+
+header h2 {
+  width: 15%;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #7a7d81;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+h2 span{
+  text-align: right;
+  width: 50px;
+}
+#log {
+  padding: 3px;
+  height: 75px;
+  width: 30%;
+  border: 3px solid black;
+  background-color: #7a7d81;
+  overflow: auto;
+  text-align: left;
+  border-radius: 10px;
+}
+
+header > div {
+  background-color: rgb(0, 255, 0);
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 15%;
+  height: 75px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.soldeHTML{
+  font-size: 1.5em;
+  margin-left: 5px;
+  font-style: oblique;
+  color: rgb(255, 255, 255);
+}
+
+#infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 3px;
+  height: 70%;
+  width: 15%;
+
+  color: rgb(255, 255, 255);
+}
+#infos p {
+  padding: 0;
+  margin: 0;
+}
+
+td {
+  vertical-align: top;
+  height: 400px;
+  width: 400px;
+  background-color: #808080;
+  border: 4px solid black;
+}
+
+/* screen 1 */
+/* Farm Screen */
+#screen1 {
+  border: 3px solid black;
+  background-color: rgb(111, 122, 130);
+}
+
+#headScreen1 {
+  border: 3px solid black;
+  padding: 3px;
+  background-color: #7a7d81;
+  height: 80px;
+}
+
+#FarmScreen {
+  max-height: 720px;
+  height: auto;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+#addFarmBtn,
+#addFullFarmBtn {
+  background-color: rgb(0, 247, 0);
+}
+
+.gifminage{
+  height:30px;
+}
+.farmSpan {
+  border-radius: 25px;
+  background: rgba(136, 136, 136, 0.612);
+  border: 2px black solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px;
+  height: 40px;
+}
+.mh {
+  color: aliceblue;
+}
+.mh span {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: -35px;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+  transform: scale(0) rotate(-12deg);
+  transition: all 0.25s;
+  opacity: 0;
+}
+.mh:hover,
+.mh:focus {
+  color: black;
+}
+.mh:hover span,
+.mh:focus span {
+  transform: scale(1) rotate(0);
+  opacity: 1;
+}
+
+.GIFcontener{
+  padding-top: 12px;
+  background-color: #7a7d81;
+  border: 3px solid black;
+  border-radius: 9px;
+}
+
+.rightFarm {
+  height: 35px;
+  margin-right: 10px;
+}
+.leftFarm {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  height: 20px;
+  padding: 3px;
+  margin: 3px;
+}
+.leftFarm p {
+  /* width: 20px; */
+  height: 20px;
+  text-align: left;
+}
+.BtnDel {
+  background-color: red;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.BtnGPU {
+  margin-left: 10px;
+  width: 60px;
+}
+
+/* GPU style */
+.placeForGPU {
+  display: flex;
+  width: auto;
+  /* w196 */
+  margin-left: 0px;
+  top: -5px;
+}
+
+.GPU {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(0, 248, 54);
+  margin: 2px;
+}
+.GPU span {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: -35px;
+  color: rgb(0, 248, 54);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  transform: scale(0) rotate(-12deg);
+  transition: all 0.25s;
+  opacity: 0;
+}
+.GPU:hover,
+.GPU:focus {
+  height: 18px;
+  width: 18px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+}
+.GPU:hover span,
+.GPU:focus span {
+  transform: scale(1) rotate(0);
+  opacity: 1;
+}
+.SellGpuBtn {
+  padding: 2px;
+  margin-right: 3px;
+  background-color: red;
+  height: 20px;
+  color: black;
+  border-radius: 5px;
+}
+.SellGpuBtn:hover {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 0;
+}
+
+/* screen 2 */
+#screen2 {
+  border: 3px solid black;
+
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  background-color: grey;
+  text-align: left;
+}
+
+#headScreen2 > h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#headScreen2 {
+  border: 3px solid black;
+  height: 40px;
+  background-color: darkgrey;
+}
+
+/* screen 3 */
+#screen3 {
+  /* display: flex;
+  flex-direction: column; */
+  border: 3px solid black;
+  background-color: grey;
+}
+#headScreen3{
+  border: black 3px solid;
+  height: 40px;
+  background-color: darkgrey;
+
+}
+#headScreen3 > h3 {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+#scr3contenu span {
+  font-size: large;
+  font-style: normal;
+}
+/* screen 4 */
+#screen4 {
+  /* display: flex;
+  flex-direction: column; */
+  border: 3px solid black;
+  background-color: grey;
+}
+#headScreen4{
+  border: black 3px solid;
+  height: 40px;
+  background-color: darkgrey;
+
+}
+#headScreen4 > h3 {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+#scr4contenu {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  column-gap: 0;
+  row-gap: 3px;
+  column-gap: 1px;
+
+  margin: 0;
+}
+#scr4contenu > p{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 3px;
+}
+#scr4contenu > p >span,
+#scr4contenu > p >strong{
+  margin-right: 10px;
+}
+
+#ttethMin {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+/* cours */
+#headScreen5 {
+  border: 3px solid black;
+  height: 40px;
+  background-color: darkgrey;
+}
+#headScreen5 > h3 {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
